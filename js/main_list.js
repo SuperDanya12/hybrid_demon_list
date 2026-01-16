@@ -33,7 +33,7 @@ const main_list = [
   
   {name: "Heaven and Hell", author: "SnowballZn", id: "412", image: "heaven_and_hell.png", verifer: "SnowballZn", victors: ["TimurBossGD","CanserTeam"]},
 
-  {name: "THinkINg Fuck", author: "jaggeddima", id: "127", image: "thinking_fuck.png", verifer: "jaggeddima", victors: ["CanserTeam"]},
+  {name: "THinkINg Fuck", author: "jaggeddima", id: "127", image: "thinking_fuck.png", verifer: "jaggeddima", victors: ["Burda5800gd","CanserTeam"]},
 
   {name: "8 Bit Game", author: "Kosmos", id: "396", image: "8_bit_game.png", verifer: "player", victors: []},
 
@@ -69,6 +69,7 @@ for (let i = 0; i < main_list.length; i++) {
   container.appendChild(clone);
 }
 original.style.display = 'none';
+
 
 
 
