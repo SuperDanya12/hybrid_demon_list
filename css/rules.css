@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #350035 url('../img/background.png') no-repeat center center;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ddbbdd;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+header {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  background-color: #220022;
+  border-bottom: 12px solid #2B002B;
+  margin-bottom: 42px;
+  font-size: 225%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer {
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  background-color: #220022;
+  border-top: 12px solid #2B002B;
+  margin-top: 42px;
+  font-size: 150%;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rules_card {
+  background: #450045;
+  background: linear-gradient(to right, #650065, #450045);
+  width: 1012px;
+  flex-wrap: wrap;
+  border: 4px solid #FF55FF;
+  border-radius: 15px;
+  margin: 30px auto;
+  padding: 22px;
+  display: flex;
+  box-shadow: 0 0 15px #BB00BB;
+}
+.rules_card_info {
+  width:100%;
+  height:100%;
+  margin-left: 15px;
+  font-size: 50px;
+  font-weight: 600;
+  text-shadow: 4px 4px 3px #450045;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+}
+.rule {
+  font-size: 30px;
+}
+.text_blue_glow {
+  color: #ccffff;
+  text-shadow: 0 0 15px #99ffff;
+}
+.text_pink_glow {
+  color: #ffeeff;
+  text-shadow: 0 0 15px #dd99dd;
+}
+.button1 {
+    height: 60px;
+    width: 60px;
+    background: #450045;
+    border: 6px solid #FF55FF;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #BB00BB;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 30px;
+    text-shadow: 0 0 15px #d998d5;
+    color: #ffdefd;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+    transition:
+        width 0.2s,
+        background-color 0.2s,
+        border-color 0.2s,
+        box-shadow 0.2s,
+        color 0.2s;
+}
+.button_icon {
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  transition:
+      filter 0.2s;
+}
+.button1:hover img {
+  filter: brightness(0.5);
+}
+.button1:active img {
+  filter: brightness(0);
+}
+.button1:hover {
+  cursor: pointer;
+  background-color: #FF55FF;
+  color: #450045;
+}
+.button1:active {
+  background-color: white;
+  border-color: white;
+  color: black;
+  box-shadow: 0 0 10px #BBBBBB;
+}
+/*--------------------------BURGER--------------------------*/
+#burger {
+  z-index: 5;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translate(-50px, 30px);
+}
+.burger_button {
+    height: 60px;
+    width: 60px;
+    background: #450045;
+    border: 6px solid #FF55FF;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #BB00BB;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 30px;
+    text-shadow: 0 0 15px #d998d5;
+    color: #ffdefd;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+    transition:
+        width 0.2s,
+        background-color 0.2s,
+        border-color 0.2s,
+        box-shadow 0.2s,
+        color 0.2s;
+}
+.burger_image {
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  transition:
+      filter 0.2s;
+}
+.burger_button:hover img {
+  filter: brightness(0.5);
+}
+.burger_button:active img {
+  filter: brightness(0);
+}
+.burger_button:hover {
+  cursor: pointer;
+  background-color: #FF55FF;
+  color: #450045;
+}
+.burger_button:active {
+  background-color: white;
+  border-color: white;
+  color: black;
+  box-shadow: 0 0 10px #BBBBBB;
+}
+#burger_menu {
+    z-index: 6;
+    background: rgba(30, 0, 30, 0.5);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    height: 215px;
+    width: 300px;
+    border: 4px solid #FF55FF;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 0 15px #BB00BB;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translate(-50px, 110px);
+
+    display: none;
+    flex-direction: column;
+}
+.burger_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.burger_button2 {
+  z-index: 7;
+  height: 60px;
+  width: 300px;
+  background: #450045;
+  border: 6px solid #FF55FF;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #BB00BB;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 30px;
+  text-shadow: 0 0 15px #d998d5;
+  color: #ffdefd;
+  transition:
+    width 0.2s,
+    background-color 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s,
+    color 0.2s;
+}
+.burger_button2:hover {
+  cursor: pointer;
+  background-color: #FF55FF;
+  color: #450045;
+}
+.burger_button2:active {
+  background-color: white;
+  border-color: white;
+  color: black;
+  box-shadow: 0 0 10px #BBBBBB;
+}
+/*--------------------------BURGER--------------------------*/
