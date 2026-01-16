@@ -6,10 +6,10 @@ const main_list = [
   {name: "Platinum Circles", author: "2Rus", id: "180", image: "platinum_circles.png", verifer: "player", victors: []},
   
   {name: "EQU1NOX", author: "TW1ST3D", id: "300", image: "equ1nox.png", verifer: "player", victors: []},
-
-  {name: "Evil Pebble", author: "SuperDanya12", id: "398", image: "evil_pebble.png", verifer: "SuperDanya12", victors: ["Burda5800gd"]},
   
   {name: "ILOVEWAVE", author: "Burda5800gd", id: "408", image: "ilovewave.png", verifer: "Burda5800gd", victors: []},
+
+  {name: "Evil Pebble", author: "SuperDanya12", id: "398", image: "evil_pebble.png", verifer: "SuperDanya12", victors: ["Burda5800gd"]},
 
   {name: "toxic waste", author: "KraM", id: "644", image: "toxic_waste.png", verifer: "TimurBossGD", victors: []},
 
@@ -69,6 +69,7 @@ for (let i = 0; i < main_list.length; i++) {
   container.appendChild(clone);
 }
 original.style.display = 'none';
+
 
 
 
