@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="SuperDanya12">
+    <meta name="description" content="Тестовая страница">
+    <meta name="keywords" content="тест, проверка, html">
+    <link href="img/favicon.ico" rel="icon">
+
+    <title>Hybrid Demon List</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1><span class="text_pink_glow">Hybrid Demon List</span></h1>
+      <p>Official Demonlist</p>
+    </header>
+    <nav>
+      <button class="nav_main_button">Main</button>
+      <button class="nav_future_button">Future</button>
+    </nav>
+    <main>
+      <div id="container">
+        <div class="card" id="main_card0">
+          <div class="lvl_image_box">
+            <img src="" onerror="this.onerror=null; this.src='img/no_image.png'" alt="" class="lvl_image">
+          </div>
+          <div class="info">
+            <div class="name">
+              <span class="text_blue_glow"></span>
+              <span class="text_pink_glow"></span>
+            </div>
+            <div class="author"></div>
+            <div class="lvl_id"></div>
+          </div>
+          <div class="buttons">
+            <button class="button1">
+              <img src="img/achievement.png" alt="" class="button_icon">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="container2">
+        <div class="card" id="future_card0">
+          <div class="lvl_image_box">
+            <img src="" onerror="this.onerror=null; this.src='img/no_image.png'" alt="" class="lvl_image">
+          </div>
+          <div class="info">
+            <div class="name">
+              <span class="text_pink_glow"></span>
+            </div>
+            <div class="author"></div>
+            <div class="status"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="modal">
+      <div class="modal_info">
+        <div class="modal_buttons">
+          <button class="button1">
+            <img src="img/exit.png" alt="" class="button_icon"></button>
+        </div>
+        <div class="modal_info2">
+          <span id="level_text" class="modal_lvl_name">Level</span>
+          <span class="text_pink_glow" id="verifer_text">Verifed by player</span>
+          <span class="text_pink_glow" id="victors_text">Victors: </span>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>© 2026 HYBRID GDPS | Site by SuperDanya12</p>
+    </footer>
+    <div id="burger">
+      <div class="burger_box">
+        <button class="burger_button"><img src="img/burger_menu.png" class="burger_image"></img></button>
+      </div>
+    </div>
+    <div id="burger_menu">
+      <div class="burger_buttons">
+        <button onclick="window.location.href='rules.html'" class="burger_button2">Rules</button>
+        <button onclick="window.open('https://t.me/HybridDemonlist_bot', '_blank')" class="burger_button2">Submit a record</button>
+        <button onclick="window.open('https://t.me/Hybrid_GDPS', '_blank')" class="burger_button2">Teleram Channel</button>
+      </div>
+    </div>
+  </body>
+  <script src="js/main_list.js"></script>
+  <script src="js/future_list.js"></script>
+  <script src="js/main.js"></script>
+</html>
