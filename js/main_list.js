@@ -23,11 +23,11 @@ const main_list = [
   
   {name: "2p Force", author: "BiseikaGMD", id: "443", image: "2p_force.png", verifer: "player", victors: ["CanserTeam"]},
 
-  {name: "Sine Wave", author: "Burda5800gd", id: "405", image: "sine_wave.png", verifer: "Burda5800gd", victors: []},
+  {name: "goida epta", author: "jaggeddima", id: "429", image: "goida_epta.png", verifer: "jaggeddima", victors: ["CanserTeam"]},
 
   {name: "Fractured Reality", author: "diore", id: "301", image: "fractured_reality.png", verifer: "player", victors: []},
-  
-  {name: "goida epta", author: "jaggeddima", id: "429", image: "goida_epta.png", verifer: "jaggeddima", victors: ["CanserTeam"]},
+
+  {name: "Sine Wave", author: "Burda5800gd", id: "405", image: "sine_wave.png", verifer: "Burda5800gd", victors: []},
 
   {name: "Unbound", author: "TW1ST3D", id: "367", image: "unbound.png", verifer: "player", victors: []},
   
@@ -69,6 +69,7 @@ for (let i = 0; i < main_list.length; i++) {
   container.appendChild(clone);
 }
 original.style.display = 'none';
+
 
 
 
