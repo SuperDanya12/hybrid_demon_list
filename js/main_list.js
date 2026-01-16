@@ -21,7 +21,7 @@ const main_list = [
 
   {name: "Dual Switch", author: "Kosmos", id: "639", image: "dual_switch.png", verifer: "player", victors: []},
   
-  {name: "2p Force", author: "BiseikaGMD", id: "443", image: "2p_force.png", verifer: "player", victors: ["CanserTeam"]},
+  {name: "2p Force", author: "BiseikaGMD", id: "443", image: "2p_force.png", verifer: "CanserTeam", victors: []},
 
   {name: "goida epta", author: "jaggeddima", id: "429", image: "goida_epta.png", verifer: "jaggeddima", victors: ["CanserTeam"]},
 
@@ -69,6 +69,7 @@ for (let i = 0; i < main_list.length; i++) {
   container.appendChild(clone);
 }
 original.style.display = 'none';
+
 
 
 
