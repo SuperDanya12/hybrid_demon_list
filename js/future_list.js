@@ -1,5 +1,4 @@
 const future_list = [
-  {name: "Azurema", author: "MasterZeyn", image: "azurema.png", status: "Building"},
   {name: "Toxic Waste Infinity", author: "SuperDanya12", image: "toxic_waste_infinity.png", status: "Building"},
   {name: "ILOVEWAVE II", author: "Burda5800gd", image: "ilovewave_ii.png", status: "Verifying"}
 ];
@@ -21,3 +20,4 @@ for (let i = 0; i < future_list.length; i++) {
   container2.appendChild(clone);
 }
 original2.style.display = 'none';
+
