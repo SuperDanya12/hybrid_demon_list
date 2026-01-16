@@ -13,7 +13,25 @@ const main_list = [
 
   {name: "toxic waste", author: "KraM", id: "644", image: "toxic_waste.png", verifer: "TimurBossGD", victors: []},
 
-  {name: "MAYMORY", author: "Kosmos", id: "393", image: "maymory.png", verifer: "Burda5800gd", victors: []}
+  {name: "2p Force", author: "BiseikaGMD", id: "443", image: "2p_force.png", verifer: "player", victors: []},
+
+  {name: "CDVG", author: "pushkin228", id: "241", image: "cdvg.png", verifer: "player", victors: []},
+
+  {name: "MAYMORY", author: "Kosmos", id: "393", image: "maymory.png", verifer: "Burda5800gd", victors: []},
+
+  {name: "Dual Switch", author: "Kosmos", id: "639", image: "dual_switch.png", verifer: "player", victors: []},
+
+  {name: "goida epta", author: "jaggeddima", id: "429", image: "goida_epta.png", verifer: "jaggeddima", victors: []},
+
+  {name: "DIACET", author: "ZippRolex", id: "566", image: "diacet.png", verifer: "player", victors: []},
+
+  {name: "Sine Wave", author: "Burda5800gd", id: "405", image: "sine_wave.png", verifer: "Burda5800gd", victors: []},
+
+  {name: "Fractured Reality", author: "Burda5800gd", id: "301", image: "fractured_reality.png", verifer: "player", victors: []},
+
+  {name: "Heaven and Hell", author: "MasterZeyn4822", id: "412", image: "heaven_and_hell.png", verifer: "TimurBossGD", victors: []},
+
+  {name: "Unbound", author: "TW1ST3D", id: "367", image: "unbound.png", verifer: "player", victors: []}
 
 ];
 
@@ -36,3 +54,4 @@ for (let i = 0; i < main_list.length; i++) {
   container.appendChild(clone);
 }
 original.style.display = 'none';
+
