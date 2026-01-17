@@ -1,19 +1,19 @@
 const main_list = [
   {name: "Miha Difficult", author: "KuratheGuy", id: "240", image: "miha_difficult.png", verifer: "Lunikay", victors: []},
 
-  {name: "Also Anathema", author: "Burda5800gd", id: "665", image: "also_anathema.png", verifer: "Burda5800gd", victors: ["CanserTeam"]},
+  {name: "Also Anathema", author: "Burda5800gd", id: "665", image: "also_anathema.png", verifer: "Burda5800gd", victors: ["Kwist"]},
 
   {name: "Platinum Circles", author: "2Rus", id: "180", image: "platinum_circles.png", verifer: "player", victors: []},
   
   {name: "EQU1NOX", author: "TW1ST3D", id: "300", image: "equ1nox.png", verifer: "player", victors: []},
   
-  {name: "ILOVEWAVE", author: "Burda5800gd", id: "408", image: "ilovewave.png", verifer: "Burda5800gd", victors: ["CanserTeam"]},
+  {name: "ILOVEWAVE", author: "Burda5800gd", id: "408", image: "ilovewave.png", verifer: "Burda5800gd", victors: ["Kwist"]},
 
-  {name: "Evil Pebble", author: "SuperDanya12", id: "398", image: "evil_pebble.png", verifer: "SuperDanya12", victors: ["Burda5800gd","CanserTeam"]},
+  {name: "Evil Pebble", author: "SuperDanya12", id: "398", image: "evil_pebble.png", verifer: "SuperDanya12", victors: ["Burda5800gd","Kwist"]},
 
-  {name: "toxic waste", author: "KraM", id: "644", image: "toxic_waste.png", verifer: "TimurBossGD", victors: ["CanserTeam"]},
+  {name: "toxic waste", author: "KraM", id: "644", image: "toxic_waste.png", verifer: "TimurBossGD", victors: ["Kwist"]},
 
-  {name: "MAYMORY", author: "Kosmos", id: "393", image: "maymory.png", verifer: "Burda5800gd", victors: ["CanserTeam"]},
+  {name: "MAYMORY", author: "Kosmos", id: "393", image: "maymory.png", verifer: "Burda5800gd", victors: ["Kwist"]},
 
   {name: "DIACET", author: "ZippRolex", id: "566", image: "diacet.png", verifer: "player", victors: []},
   
@@ -21,9 +21,9 @@ const main_list = [
 
   {name: "Dual Switch", author: "Kosmos", id: "639", image: "dual_switch.png", verifer: "player", victors: []},
   
-  {name: "2p Force", author: "BiseikaGMD", id: "443", image: "2p_force.png", verifer: "CanserTeam", victors: []},
+  {name: "2p Force", author: "BiseikaGMD", id: "443", image: "2p_force.png", verifer: "Kwist", victors: []},
 
-  {name: "goida epta", author: "jaggeddima", id: "429", image: "goida_epta.png", verifer: "jaggeddima", victors: ["CanserTeam"]},
+  {name: "goida epta", author: "jaggeddima", id: "429", image: "goida_epta.png", verifer: "jaggeddima", victors: ["Kwist"]},
 
   {name: "Fractured Reality", author: "diore", id: "301", image: "fractured_reality.png", verifer: "player", victors: []},
 
@@ -31,9 +31,9 @@ const main_list = [
 
   {name: "Unbound", author: "TW1ST3D", id: "367", image: "unbound.png", verifer: "player", victors: []},
   
-  {name: "Heaven and Hell", author: "SnowballZn", id: "412", image: "heaven_and_hell.png", verifer: "SnowballZn", victors: ["TimurBossGD","CanserTeam"]},
+  {name: "Heaven and Hell", author: "SnowballZn", id: "412", image: "heaven_and_hell.png", verifer: "SnowballZn", victors: ["TimurBossGD","Kwist"]},
 
-  {name: "THinkINg Fuck", author: "jaggeddima", id: "127", image: "thinking_fuck.png", verifer: "jaggeddima", victors: ["Burda5800gd","CanserTeam"]},
+  {name: "THinkINg Fuck", author: "jaggeddima", id: "127", image: "thinking_fuck.png", verifer: "jaggeddima", victors: ["Burda5800gd","Kwist"]},
 
   {name: "8 Bit Game", author: "Kosmos", id: "396", image: "8_bit_game.png", verifer: "player", victors: []},
 
@@ -69,6 +69,7 @@ for (let i = 0; i < main_list.length; i++) {
   container.appendChild(clone);
 }
 original.style.display = 'none';
+
 
 
 
