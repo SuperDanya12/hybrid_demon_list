@@ -14,18 +14,22 @@
       <h1><span class="text_pink_glow">Hybrid Demon List</span></h1>
       <p>Rules</p>
     </header>
+    <nav>
+      <button id="button1">Добавление рекорда</button>
+      <button id="button2">Добавление уровня</button>
+    </nav>
     <main>
-      <div id="rules_box">
+      <div id="rules_box1">
         <div class="rules_card">
           <div class="rules_card_info">
             <div>
-              <span class="text_pink_glow">Общие правила</span>
+              <span class="text_pink_glow">Прохождение</span>
             </div>
             <ul class="rule">
-              <li>Прохождение должно быть выполнено честно, без читов и модификаций.</li>
-              <li>Использование багов или секретных путей уровня запрещено.</li>
-              <li>Прохождение должно быть записано на видео.</li>
-              <li>Видео должно быть без обрезок и ускорений.</li>
+              <li>Прохождение должно быть выполнено честно, без читов и модификаций</li>
+              <li>Использование секретных путей которые пропускают часть гемплея (минимум 10%) или багов уровня запрещено</li>
+              <li>Прохождение должно быть записано на видео</li>
+              <li>Минимум 60 тпс</li>
             </ul>
           </div>
         </div>
@@ -35,11 +39,40 @@
               <span class="text_pink_glow">Требования к видео</span>
             </div>
             <ul class="rule">
-              <li>Должен быть виден полный HUD.</li>
-              <li>В начале видео должен быть показан старт уровня.</li>
-              <li>В конце видео должен быть показан экран завершения.</li>
-              <li>Качество видео должно быть не ниже 720p.</li>
-              <li>На видео должны присутствовать клики, надписи CPS, FPS, Cheat indicator.</li>
+              <li>Видео должно быть без обрезок и ускорений</li>
+              <li>В видео должны быть отчетливо слышимые звуки кликов/тапов</li>
+              <li>Чит индикатор в углу экрана</li>
+              <li>Фпс в углу экрана</li>
+              <li>В конце видео должен быть показан экран завершения</li>
+              <li>Качество видео должно быть не ниже 480p 60FPS</li>
+              <li>На видео должны присутствовать клики, надписи CPS, FPS, Cheat indicator</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rules_card">
+          <div class="rules_card_info">
+            <div>
+              <span class="text_pink_glow">Идентификация читов</span>
+            </div>
+            <ul class="rule">
+              <li>No Hide Trigger, No Mirror, No Camera Move/Zoom, Show Hitboxes, Show Layout и подобные - запрещены</li>
+              <li>Noclip, No Spikes, Hitbox Multiplier, Speedhack, Game Guardian - запрещены</li>
+              <li>Pause Buffering запрещен</li>
+              <li>Сильное замедление игры запрещено</li>
+              <li>Во время уровня нельзя изменять FPS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rules_card">
+          <div class="rules_card_info">
+            <div>
+              <span class="text_pink_glow">Нестандартные случаи, которые приравниваются к прохождению</span>
+            </div>
+            <ul class="rule">
+              <li>Noclip Accuracy 100%</li>
+              <li>прохождение уровня в практике с 1 попытки</li>
+              <li>StartPos с 0.00% (в основном касается StartPos Switcher)</li>
+              <li>если игрок прошёл весь геймплей, но случайно вышел из уровня после этого. (Однако, игрок должен достигнуть победного окна, если чит индикатор отключён во время прохождения)</li>
             </ul>
           </div>
         </div>
@@ -49,20 +82,25 @@
               <span class="text_pink_glow">Добавление рекордов</span>
             </div>
             <ul class="rule">
-              <li>Рекорды отправляются через Telegram-бота.</li>
-              <li>Администрация оставляет за собой право отклонить рекорд.</li>
-              <li>Фейковые прохождения приведут к наказанию.</li>
+              <li>Рекорды отправляются в лс</li>
+              <li>Администрация оставляет за собой право отклонить рекорд</li>
+              <li>Нарушение правил приведет к наказанию</li>
             </ul>
           </div>
         </div>
+      </div>
+      <div id="rules_box2">
         <div class="rules_card">
           <div class="rules_card_info">
             <div>
-              <span class="text_pink_glow">Дополнительно</span>
+              <span class="text_pink_glow">Основное</span>
             </div>
             <ul class="rule">
-              <li>Правила могут обновляться без предупреждения.</li>
-              <li>Незнание правил не освобождает от ответственности.</li>
+              <li>Уровень должен быть построен на типе игры Classic</li>
+              <li>Маскимум 12 кпс</li>
+              <li>Минимум 25 секунд</li>
+              <li>Уровень должен быть пройден легитно</li>
+              <li>Для верификации уровня требуется собрать все монеты</li>
             </ul>
           </div>
         </div>
@@ -86,6 +124,3 @@
   </body>
   <script src="js/rules.js"></script>
 </html>
-
-
-
