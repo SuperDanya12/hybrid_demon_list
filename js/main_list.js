@@ -15,13 +15,13 @@ const main_list = [
 
   {name: "toxic waste", creators: ["KraM"], id: "644", image: "toxic_waste.png", verifer: "TimurBossGD", victors: ["Kwist"]},
 
-  {name: "MAYMORY", creators: ["Kosmos"], id: "393", image: "maymory.png", verifer: "Burda5800gd", victors: ["Kwist"]},
+  {name: "MAYMORY", creators: ["Kosmos"], id: "393", image: "maymory.png", verifer: "Kosmos", victors: ["Burda5800gd","Kwist"]},
 
   {name: "DIACET", creators: ["ZippRolex"], id: "566", image: "diacet.png", verifer: "player", victors: []},
 
   {name: "CDVG", creators: ["pushkin228"], id: "241", image: "cdvg.png", verifer: "player", victors: []},
 
-  {name: "Dual Switch", creators: ["Kosmos"], id: "639", image: "dual_switch.png", verifer: "player", victors: []},
+  {name: "Dual Switch", creators: ["Kosmos"], id: "639", image: "dual_switch.png", verifer: "Kosmos", victors: []},
 
   {name: "2p Force", creators: ["BiseikaGMD"], id: "443", image: "2p_force.png", verifer: "Kwist", victors: []},
 
@@ -37,7 +37,7 @@ const main_list = [
 
   {name: "THinkINg Fuck", creators: ["jaggeddima"], id: "127", image: "thinking_fuck.png", verifer: "jaggeddima", victors: ["Burda5800gd","Kwist"]},
 
-  {name: "8 Bit Game", creators: ["Kosmos"], id: "396", image: "8_bit_game.png", verifer: "player", victors: []},
+  {name: "8 Bit Game", creators: ["Kosmos"], id: "396", image: "8_bit_game.png", verifer: "Kosmos", victors: []},
 
   {name: "prism attack", creators: ["chaynik"], id: "582", image: "prism_attack.png", verifer: "player", victors: []},
 
@@ -49,7 +49,7 @@ const main_list = [
 
   {name: "El3CTr0 C1rcLeS", creators: ["jaggeddima"], id: "227", image: "el3ctr0 c1rcles.png", verifer: "jaggeddima", victors: []},
 
-  {name: "Lava Bounce", creators: ["Kosmos"], id: "394", image: "lava_bounce.png", verifer: "SuperDanya12", victors: []}
+  {name: "Lava Bounce", creators: ["Kosmos"], id: "394", image: "lava_bounce.png", verifer: "Kosmos", victors: ["SuperDanya12"]}
 ];
 
 const container = document.getElementById("container");
@@ -73,3 +73,4 @@ for (let i = 0; i < main_list.length; i++) {
   container.appendChild(clone);
 }
 original.style.display = 'none';
+
