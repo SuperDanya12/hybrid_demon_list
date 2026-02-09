@@ -332,7 +332,7 @@ nav button:active {
 .buttons {
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: flex-start;
   gap: 15px;
 }
 .modal_info {
@@ -371,7 +371,7 @@ nav button:active {
 .modal_buttons {
   display: flex;
   align-items: right;
-  justify-content: right;
+  justify-content: flex-end;
 }
 .modal_info2 {
   width:100%;
@@ -410,11 +410,11 @@ nav button:active {
   box-shadow: 0 0 15px #7700BB;
   object-fit: cover;
 }
-#verifer_text {
+#verifier_text {
   color: #ccffff;
   text-shadow: 0 0 15px #99ffff;
 }
-#modal_verifers {
+#modal_verifiers {
   font-size: 80px;
 }
 #modal_creators {
