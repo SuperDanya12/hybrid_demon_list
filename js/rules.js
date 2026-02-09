@@ -7,6 +7,7 @@ const rules_box2 = document.getElementById("rules_box2")
 
 
 rules_box2.style.display = 'none';
+button1.disabled = true;
 
 button1.addEventListener('click', function() {
   rules_box2.style.display = 'none';

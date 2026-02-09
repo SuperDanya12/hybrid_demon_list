@@ -4,9 +4,11 @@ const burger_button = document.querySelector(".burger_button");
 const modal = document.getElementById('modal');
 const close_modal_button = modal.querySelector('.button1');
 const burger_menu = document.getElementById("burger_menu");
+const creators_text = document.getElementById("creators_text");
 
 
 container2.style.display = 'none';
+main_button.disabled = true;
 
 document.querySelector(".nav_main_button").addEventListener('click', function() {
   console.log('main');
@@ -33,12 +35,12 @@ document.addEventListener('click', function(e) {
     const button = e.target.closest('.button1');
     if (button) {
         if (button.parentElement.parentElement.id.slice(0,9) == "main_card") {
-          id = (button.parentElement.parentElement.id.slice(9))-1;
-          let verifer_text = document.getElementById("verifer_text")
+          let id = (button.parentElement.parentElement.id.slice(9))-1;
+          let verifier_text = document.getElementById("verifier_text")
           let level_text = document.getElementById("level_text");;
           let victors_text = document.getElementById("victors_text");;
           let image = document.getElementById("modal_lvl_image");;
-          verifer_text.textContent = main_list[id].verifer;
+          verifier_text.textContent = main_list[id].verifier;
           level_text.textContent =  main_list[id].name;
           image.src = "img/" + main_list[id].image;
           image.onerror = function() {
