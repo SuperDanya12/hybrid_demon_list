@@ -1,9 +1,9 @@
 const main_list = [
   {name: "Miha Difficult", creators: ["KuratheGuy","MihaMilos","Triscis","Hexy","Gamecheese"], id: "240", image: "miha_difficult.png", verifier: "Lunikay", victors: []},
 
-  {name: "Chaos Circles", creators: ["MiRPacK19"], id: "620", image: "chaos_circles.png", verifier: "MiRPacK19", victors: []},
-
   {name: "Also Anathema", creators: ["Burda5800gd","Kosmos","PERFARATARRRRRR"], id: "665", image: "also_anathema.png", verifier: "Burda5800gd", victors: ["Kwist"]},
+
+  {name: "Chaos Circles", creators: ["MiRPacK19"], id: "620", image: "chaos_circles.png", verifier: "MiRPacK19", victors: []},
 
   {name: "Platinum Circles", creators: ["2Rus"], id: "180", image: "platinum_circles.png", verifier: "player", victors: []},
 
@@ -73,3 +73,4 @@ for (let i = 0; i < main_list.length; i++) {
   container.appendChild(clone);
 }
 original.style.display = 'none';
+
