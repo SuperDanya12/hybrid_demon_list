@@ -65,18 +65,19 @@
     <div id="modal">
       <div class="modal_info">
         <div class="modal_buttons">
-          <button class="button1">
+          <button class="button1 close_modal_btn">
             <img src="img/exit.png" alt="" class="button_icon">
           </button>
         </div>
         <div class="modal_info2">
-          <div class="modal_lvl_image_box">
-            <img src="img/equ1nox.png" alt="" id="modal_lvl_image" height="300" width="600">
+          <div class="modal_lvl_image_box" id="modal_media_box">
+            <img src="img/no_image.png" alt="" id="modal_lvl_image">
           </div>
           <span id="level_text" class="modal_lvl_name">Level</span>
           <span id="modal_creators"><span class="text_pink_glow">By <span class="text_blue_glow" id="creators_text">player</span></span></span>
           <span id="modal_verifiers"><span class="text_pink_glow">Verified by <span class="text_blue_glow" id="verifier_text">player</span></span></span>
-          <span class="text_purple_glow" id="victors_text">Victors: </span>
+          <span class="text_purple_glow" id="victors_title">Victors:</span>
+          <div id="victors_list"></div>
         </div>
       </div>
     </div>

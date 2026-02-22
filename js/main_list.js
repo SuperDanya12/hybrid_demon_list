@@ -14,15 +14,20 @@ for (let i = 0; i < main_list.length; i++) {
   const victorsCount = clone.querySelector(".victors_count");
 
   place.textContent = "#" + (i + 1);
-  name.textContent = " - " + main_list[i].name;
+  name.textContent = " " + main_list[i].name;
   author.textContent = main_list[i].creators.length > 1
     ? "by " + main_list[i].creators[0] + " & More"
     : "by " + main_list[i].creators[0];
   id.textContent = "ID: " + main_list[i].id;
   points.textContent = "Points: " + main_list[i].points;
 
-  let count = main_list[i].victors.length;
+  let count = 0;
   if (main_list[i].verifier !== "player") count++;
+  if (main_list[i].victors.count) {
+    for (var j = 0; j < main_list[i].victors.length; i++) {
+      if (main_list[i].victors[j].progress/100) count++;
+    }
+  }
   victorsCount.textContent = "Victors: " + count;
 
   image.src = "img/" + main_list[i].image;
