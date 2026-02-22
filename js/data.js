@@ -29,9 +29,8 @@ const main_list = [
 
 const future_list = [
   {name: "ILOVEWAVE II", author: "Burda5800gd", image: "ilovewave_ii.png", status: "Verifying"},
-  {name: "Hybrid Avernus", author: , image: "hybrid_avernus.png", status: "Building"},
+  {name: "Hybrid Avernus", author: "Kwist", image: "hybrid_avernus.png", status: "Building"},
   {name: "Toxic Waste Infinity", author: "SuperDanya12", image: "toxic_waste_infinity.png", status: "Building"},
   {name: "High Tide", author: "SnowballZn", image: "high_tide.png", status: "Building"},
   {name: "Azurema", author: "SnowballZn", image: "azurema.png", status: "Building"}
 ];
-
