@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="author" content="SuperDanya12">
     <meta name="description" content="Official demonlist">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/favicon.ico" rel="icon">
-
     <title>Hybrid Demon List</title>
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -18,6 +19,11 @@
       <button class="nav_main_button">Main</button>
       <button class="nav_future_button">Future</button>
     </nav>
+    <div id="search_box_container">
+      <div class="search_box">
+        <input type="text" id="search_input" placeholder="Search...">
+      </div>
+    </div>
     <main>
       <div id="container">
         <div class="card" id="main_card0">
@@ -36,6 +42,8 @@
             <button class="button1">
               <img src="img/achievement.png" alt="" class="button_icon">
             </button>
+            <div class="lvl_points"></div>
+            <div class="victors_count"></div>
           </div>
         </div>
       </div>
@@ -58,7 +66,8 @@
       <div class="modal_info">
         <div class="modal_buttons">
           <button class="button1">
-            <img src="img/exit.png" alt="" class="button_icon"></button>
+            <img src="img/exit.png" alt="" class="button_icon">
+          </button>
         </div>
         <div class="modal_info2">
           <div class="modal_lvl_image_box">
@@ -82,12 +91,15 @@
     <div id="burger_menu">
       <div class="burger_buttons">
         <button onclick="window.location.href='rules.html'" class="burger_button2">Rules</button>
+        <button onclick="window.location.href='player_rankings.html'" class="burger_button2">Player rankings</button>
         <button onclick="window.open('https://t.me/superdanya12', '_blank')" class="burger_button2">Submit a record</button>
         <button onclick="window.open('https://t.me/Hybrid_GDPS', '_blank')" class="burger_button2">Telegram Channel</button>
       </div>
     </div>
+    <script src="js/data.js"></script>
     <script src="js/main_list.js"></script>
     <script src="js/future_list.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/burger.js"></script>
   </body>
 </html>
