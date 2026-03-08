@@ -105,6 +105,8 @@ const main_list = [
 const future_list = [
   {name: "Nullscape", author: "SuperDanya12", image: "nullscape.png", status: "Verifying"},
 
+  {name: "KOCKMOCK", author: "IItr1gerII", image: "kockmock.png", status: "Building"},
+
   {name: "ILOVEWAVE II", author: "Burda5800gd", image: "ilovewave_ii.png", status: "Verifying"},
 
   {name: "Hybrid Avernus", author: "Kwist", image: "hybrid_avernus.png", status: "Building"},
@@ -155,3 +157,4 @@ function getEmbedUrl(url) {
   if (url.includes("t.me/")) return { type: "link", url: url };
   return { type: "link", url: url };
 }
+
