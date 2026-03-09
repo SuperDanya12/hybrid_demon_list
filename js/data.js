@@ -1,8 +1,4 @@
 const main_list = [
-  {name: "Miha Difficult", creators: ["KuratheGuy","MihaMilos","Triscis","Hexy","Gamecheese"], id: "240", image: "miha_difficult.png", verifier: "Lunikay", victors: [
-
-  ], points: 20, verifyVideo: "https://youtu.be/cLTTnC6Xkng?si=mBykLJDoUk9aA1It"},
-
   {name: "Also Anathema", creators: ["Burda5800gd","Kosmos","PERFARATARRRRRR"], id: "665", image: "also_anathema.png", verifier: "Burda5800gd", victors: [
 
   ], points: 15, verifyVideo: "https://youtu.be/tYlGDH_Bxcg?si=-2UHvzKXQ8WqB6uV"},
@@ -157,4 +153,5 @@ function getEmbedUrl(url) {
   if (url.includes("t.me/")) return { type: "link", url: url };
   return { type: "link", url: url };
 }
+
 
