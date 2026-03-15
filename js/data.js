@@ -9,7 +9,7 @@ const main_list = [
 
   {name: "ILOVEWAVE II", creators: ["Burda5800gd"], id: "786", image: "ilovewave_ii.png", verifier: "Burda5800gd", victors: [
 
-  ], points: 9, verifyVideo: "https://t.me/hybrid_gdps_archive/13"},
+  ], points: 12, verifyVideo: "https://t.me/hybrid_gdps_archive/13"},
 
   {name: "Platinum Circles", creators: ["2Rus"], id: "180", image: "platinum_circles.png", verifier: "player", victors: [
 
