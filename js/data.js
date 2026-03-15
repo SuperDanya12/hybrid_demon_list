@@ -1,11 +1,11 @@
 const main_list = [
   {name: "Chaos Circles", creators: ["MiRPacK19"], id: "620", image: "chaos_circles.png", verifier: "MiRPacK19", victors: [
 
-  ], points: 13, verifyVideo: "https://t.me/hybrid_gdps_archive/9"},
+  ], points: 15, verifyVideo: "https://t.me/hybrid_gdps_archive/9"},
   
   {name: "Also Anathema", creators: ["Burda5800gd","Kosmos","PERFARATARRRRRR"], id: "665", image: "also_anathema.png", verifier: "Burda5800gd", victors: [
 
-  ], points: 15, verifyVideo: "https://youtu.be/tYlGDH_Bxcg?si=-2UHvzKXQ8WqB6uV"},
+  ], points: 13, verifyVideo: "https://youtu.be/tYlGDH_Bxcg?si=-2UHvzKXQ8WqB6uV"},
 
   {name: "ILOVEWAVE II", creators: ["Burda5800gd"], id: "786", image: "ilovewave_ii.png", verifier: "Burda5800gd", victors: [
 
