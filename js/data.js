@@ -7,7 +7,7 @@ const main_list = [
 
   ], points: 15, verifyVideo: "https://youtu.be/tYlGDH_Bxcg?si=-2UHvzKXQ8WqB6uV"},
 
-  {name: "ILOVEWAVE II", creators: ["Burda5800gd"], id: "408", image: "ilovewave_ii.png", verifier: "Burda5800gd", victors: [
+  {name: "ILOVEWAVE II", creators: ["Burda5800gd"], id: "786", image: "ilovewave_ii.png", verifier: "Burda5800gd", victors: [
 
   ], points: 9, verifyVideo: "https://t.me/hybrid_gdps_archive/13"},
 
