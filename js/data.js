@@ -1,11 +1,15 @@
 const main_list = [
+  {name: "Chaos Circles", creators: ["MiRPacK19"], id: "620", image: "chaos_circles.png", verifier: "MiRPacK19", victors: [
+
+  ], points: 13, verifyVideo: "https://t.me/hybrid_gdps_archive/9"},
+  
   {name: "Also Anathema", creators: ["Burda5800gd","Kosmos","PERFARATARRRRRR"], id: "665", image: "also_anathema.png", verifier: "Burda5800gd", victors: [
 
   ], points: 15, verifyVideo: "https://youtu.be/tYlGDH_Bxcg?si=-2UHvzKXQ8WqB6uV"},
 
-  {name: "Chaos Circles", creators: ["MiRPacK19"], id: "620", image: "chaos_circles.png", verifier: "MiRPacK19", victors: [
+  {name: "ILOVEWAVE II", creators: ["Burda5800gd"], id: "408", image: "ilovewave_ii.png", verifier: "Burda5800gd", victors: [
 
-  ], points: 13, verifyVideo: "https://t.me/hybrid_gdps_archive/9"},
+  ], points: 9, verifyVideo: "https://t.me/hybrid_gdps_archive/13"},
 
   {name: "Platinum Circles", creators: ["2Rus"], id: "180", image: "platinum_circles.png", verifier: "player", victors: [
 
@@ -102,8 +106,6 @@ const future_list = [
   {name: "Nullscape", author: "SuperDanya12", image: "nullscape.png", status: "Verifying"},
 
   {name: "KOCKMOCK", author: "IItr1gerII", image: "kockmock.png", status: "Building"},
-
-  {name: "ILOVEWAVE II", author: "Burda5800gd", image: "ilovewave_ii.png", status: "Verifying"},
 
   {name: "Hybrid Avernus", author: "Kwist", image: "hybrid_avernus.png", status: "Building"},
 
