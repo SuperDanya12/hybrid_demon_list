@@ -29,7 +29,7 @@ const main_list = [
 
   {name: "toxic waste", creators: ["KraM"], id: "644", image: "toxic_waste.png", verifier: "TimurBossGD", victors: [
     {name: "MiRPacK19", progress: 100, video: "https://t.me/hybrid_gdps_archive/5"}
-  ], verifyVideo: ""},
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/14"},
 
   {name: "MAYMORY", creators: ["Kosmos"], id: "393", image: "maymory.png", verifier: "Kosmos", victors: [
     {name: "Burda5800gd", progress: 100, video: ""}
@@ -67,8 +67,10 @@ const main_list = [
 
   ], verifyVideo: ""},
 
-  {name: "Heaven and Hell", creators: ["SnowballZn"], id: "412", image: "heaven_and_hell.png", verifier: "SnowballZn", victors: [{name: "TimurBossGD", progress: 100, video: ""}], points: 0.81, verifyVideo: ""},
-
+  {name: "Heaven and Hell", creators: ["SnowballZn"], id: "412", image: "heaven_and_hell.png", verifier: "SnowballZn", victors: [
+    {name: "TimurBossGD", progress: 100, video: "https://t.me/hybrid_gdps_archive/15"}
+  ], verifyVideo: ""},
+  
   {name: "THinkINg Fuck", creators: ["jaggeddima"], id: "127", image: "thinking_fuck.png", verifier: "jaggeddima", victors: [
     {name: "Burda5800gd", progress: 100, video: "https://t.me/hybrid_gdps_archive/6"}
   ], verifyVideo: ""},
