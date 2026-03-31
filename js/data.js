@@ -35,9 +35,9 @@ const main_list = [
     
   ], verifyVideo: ""},
 
-  {name: "CDVG", creators: ["pushkin228"], id: "241", image: "cdvg.png", verifier: "player", victors: [
-    {name: "sixiver227", progress: 85, video: "https://t.me/hybrid_gdps_archive/16"}
-  ], verifyVideo: ""},
+  {name: "CDVG", creators: ["pushkin228"], id: "241", image: "cdvg.png", verifier: "sixiver227", victors: [
+  
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/17"},
 
   {name: "Dual Switch", creators: ["Kosmos"], id: "639", image: "dual_switch.png", verifier: "Kosmos", victors: [
 
