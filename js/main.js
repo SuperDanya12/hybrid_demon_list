@@ -1,5 +1,6 @@
 const main_button = document.querySelector(".nav_main_button");
 const future_button = document.querySelector(".nav_future_button");
+const challenge_button = document.querySelector(".nav_challenge_button");
 const modal = document.getElementById('modal');
 const close_modal_button = modal.querySelector('.close_modal_btn');
 const creators_text = document.getElementById("creators_text");
@@ -9,11 +10,12 @@ const modalMediaBox = document.getElementById('modal_media_box');
 const cbox = document.querySelector(".list_c_box");
 
 container2.style.display = 'none';
+container3.style.display = 'none';
 main_button.disabled = true;
 cbox.style.display = 'none';
 
-
-
+// текущая вкладка: 'main', 'challenge', 'future'
+let currentTab = 'main';
 
 function createDivider(text) {
   const div = document.createElement('div');
@@ -32,9 +34,9 @@ if (mainCard1) {
 }
 
 const legacyDivider = createDivider('Legacy');
-const mainCard11 = document.getElementById('main_card16');
-if (mainCard11) {
-  container.insertBefore(legacyDivider, mainCard11);
+const mainCard16 = document.getElementById('main_card16');
+if (mainCard16) {
+  container.insertBefore(legacyDivider, mainCard16);
 }
 
 function showDividers() {
@@ -47,22 +49,38 @@ function hideDividers() {
   legacyDivider.style.display = 'none';
 }
 
-
-
 main_button.addEventListener('click', function () {
   container2.style.display = 'none';
+  container3.style.display = 'none';
   container.style.display = 'block';
   main_button.disabled = true;
   future_button.disabled = false;
+  challenge_button.disabled = false;
+  currentTab = 'main';
+  searchInput.value = '';
+  resetSearch();
+});
+
+challenge_button.addEventListener('click', function () {
+  container.style.display = 'none';
+  container2.style.display = 'none';
+  container3.style.display = 'block';
+  challenge_button.disabled = true;
+  main_button.disabled = false;
+  future_button.disabled = false;
+  currentTab = 'challenge';
   searchInput.value = '';
   resetSearch();
 });
 
 future_button.addEventListener('click', function () {
   container.style.display = 'none';
+  container3.style.display = 'none';
   container2.style.display = 'block';
   future_button.disabled = true;
   main_button.disabled = false;
+  challenge_button.disabled = false;
+  currentTab = 'future';
   searchInput.value = '';
   resetSearch();
 });
@@ -76,15 +94,20 @@ function resetSearch() {
   container2.querySelectorAll('.card').forEach(card => {
     if (card.id !== 'future_card0') card.style.display = 'flex';
   });
-  showDividers();
+  container3.querySelectorAll('.card').forEach(card => {
+    if (card.id !== 'challenge_card0') card.style.display = 'flex';
+  });
+  if (currentTab === 'main') {
+    showDividers();
+  } else {
+    hideDividers();
+  }
 }
 
 searchInput.addEventListener('input', function () {
   const query = this.value.toLowerCase().trim();
-  const isMainVisible = container.style.display !== 'none';
 
-  if (isMainVisible) {
-
+  if (currentTab === 'main') {
     if (query === '') {
       showDividers();
     } else {
@@ -102,9 +125,19 @@ searchInput.addEventListener('input', function () {
         name.includes(query) || creators.includes(query) || id.includes(query);
       card.style.display = match ? 'flex' : 'none';
     });
-  } else {
-    hideDividers();
-
+  } else if (currentTab === 'challenge') {
+    container3.querySelectorAll('.card').forEach(card => {
+      if (card.id === 'challenge_card0') return;
+      const idx = parseInt(card.id.slice(14)) - 1;
+      const level = challenge_list[idx];
+      const name = level.name.toLowerCase();
+      const creators = level.creators.join(' ').toLowerCase();
+      const id = level.id;
+      const match =
+        name.includes(query) || creators.includes(query) || id.includes(query);
+      card.style.display = match ? 'flex' : 'none';
+    });
+  } else if (currentTab === 'future') {
     container2.querySelectorAll('.card').forEach(card => {
       if (card.id === 'future_card0') return;
       const idx = parseInt(card.id.slice(11)) - 1;
@@ -135,11 +168,19 @@ document.addEventListener('click', function (e) {
   if (button.classList.contains('close_modal_btn')) return;
 
   const card = button.closest('.card');
-  if (!card || !card.id.startsWith('main_card') || card.id === 'main_card0')
-    return;
+  if (!card) return;
 
-  const id = parseInt(card.id.slice(9)) - 1;
-  const level = main_list[id];
+  let level = null;
+
+  if (card.id.startsWith('main_card') && card.id !== 'main_card0') {
+    const id = parseInt(card.id.slice(9)) - 1;
+    level = main_list[id];
+  } else if (card.id.startsWith('challenge_card') && card.id !== 'challenge_card0') {
+    const id = parseInt(card.id.slice(14)) - 1;
+    level = challenge_list[id];
+  }
+
+  if (!level) return;
 
   document.getElementById('verifier_text').textContent = level.verifier;
   document.getElementById('level_text').textContent = level.name;

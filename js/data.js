@@ -1,8 +1,4 @@
 const main_list = [
-  {name: "Chaos Circles", creators: ["MiRPacK19"], id: "620", image: "chaos_circles.png", verifier: "MiRPacK19", victors: [
-
-  ], verifyVideo: "https://t.me/hybrid_gdps_archive/9"},
-
   {name: "Also Anathema", creators: ["Burda5800gd","Kosmos","PERFARATARRRRRR"], id: "665", image: "also_anathema.png", verifier: "Burda5800gd", victors: [
 
   ], verifyVideo: "https://youtu.be/tYlGDH_Bxcg?si=-2UHvzKXQ8WqB6uV"},
@@ -70,7 +66,7 @@ const main_list = [
   {name: "Heaven and Hell", creators: ["SnowballZn"], id: "412", image: "heaven_and_hell.png", verifier: "SnowballZn", victors: [
     {name: "TimurBossGD", progress: 100, video: "https://t.me/hybrid_gdps_archive/15"}
   ], verifyVideo: ""},
-  
+
   {name: "THinkINg Fuck", creators: ["jaggeddima"], id: "127", image: "thinking_fuck.png", verifier: "jaggeddima", victors: [
     {name: "Burda5800gd", progress: 100, video: "https://t.me/hybrid_gdps_archive/6"}
   ], verifyVideo: ""},
@@ -104,6 +100,12 @@ const main_list = [
   ], verifyVideo: ""}
 ];
 
+const challenge_list = [
+  {name: "Chaos Circles", creators: ["MiRPacK19"], id: "620", image: "chaos_circles.png", verifier: "MiRPacK19", victors: [
+
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/9"}
+];
+
 const future_list = [
   {name: "Nullscape", author: "SuperDanya12", image: "nullscape.png", status: "Verifying"},
 
@@ -118,8 +120,7 @@ const future_list = [
   {name: "Azurema", author: "SnowballZn", image: "azurema.png", status: "Building"}
 ];
 
-function getPointsForPosition(pos) {
-  const total = main_list.length;
+function getPointsForPosition(pos, listLength) {
   if (pos === 1) return 10;
   if (pos >= 2 && pos <= 5) return Math.round((10 - (pos - 1) * 0.8) * 100) / 100;
   if (pos >= 6 && pos <= 10) return Math.round((6.8 - (pos - 5) * 0.6) * 100) / 100;
@@ -128,7 +129,11 @@ function getPointsForPosition(pos) {
 }
 
 for (let i = 0; i < main_list.length; i++) {
-  main_list[i].points = getPointsForPosition(i + 1);
+  main_list[i].points = getPointsForPosition(i + 1, main_list.length);
+}
+
+for (let i = 0; i < challenge_list.length; i++) {
+  challenge_list[i].points = getPointsForPosition(i + 1, challenge_list.length);
 }
 
 function calculatePoints(basePoints, progress) {

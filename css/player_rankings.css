@@ -1,3 +1,43 @@
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+nav button {
+  height: 60px;
+  width: 150px;
+  background: #00034c;
+  border: 6px solid #00d5ff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #0043b3;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 30px;
+  text-shadow: 0 0 15px #0043b3;
+  color: #e0f0ff;
+  cursor: pointer;
+  transition:
+    width 0.2s,
+    background-color 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s,
+    color 0.2s;
+}
+
+nav button:hover {
+  background-color: #00d5ff;
+  color: #00034c;
+  width: 120px;
+}
+
+nav button:active {
+  background-color: white;
+  border-color: white;
+  color: black;
+  box-shadow: 0 0 10px #BBBBBB;
+}
+
 .player_card {
   background: linear-gradient(to right, #001575, #00034c);
   width: 1012px;
@@ -155,6 +195,12 @@
   font-size: 22px;
 }
 
+.player_level_tag {
+  font-size: 18px;
+  color: #7799bb;
+  white-space: nowrap;
+}
+
 .player_levels_list {
   display: flex;
   flex-direction: column;
@@ -167,6 +213,13 @@
 /* --- Responsive --- */
 
 @media (max-width: 768px) {
+  nav { gap: 15px; }
+  nav button {
+    width: 120px;
+    font-size: 24px;
+    height: 50px;
+  }
+  nav button:hover { width: 120px; }
   .player_name { font-size: 34px; }
   .player_points { font-size: 28px; }
   .player_card { padding: 12px 16px; }

@@ -23,10 +23,8 @@ for (let i = 0; i < main_list.length; i++) {
 
   let count = 0;
   if (main_list[i].verifier !== "player") count++;
-  if (main_list[i].victors.count) {
-    for (var j = 0; j < main_list[i].victors.length; i++) {
-      if (main_list[i].victors[j].progress/100) count++;
-    }
+  for (let j = 0; j < main_list[i].victors.length; j++) {
+    if (main_list[i].victors[j].progress >= 100) count++;
   }
   victorsCount.textContent = "Victors: " + count;
 
