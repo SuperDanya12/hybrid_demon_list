@@ -8,14 +8,14 @@ nav {
 nav button {
   height: 60px;
   width: 150px;
-  background: #450045;
-  border: 6px solid #FF55FF;
+  background: #00034c;
+  border: 6px solid #00d5ff;
   border-radius: 15px;
-  box-shadow: 0 0 15px #BB00BB;
+  box-shadow: 0 0 15px #0043b3;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 30px;
-  text-shadow: 0 0 15px #d998d5;
-  color: #ffdefd;
+  text-shadow: 0 0 15px #0043b3;
+  color: #e0f0ff;
   cursor: pointer;
   transition:
     width 0.2s,
@@ -26,8 +26,8 @@ nav button {
 }
 
 nav button:hover {
-  background-color: #FF55FF;
-  color: #450045;
+  background-color: #00d5ff;
+  color: #00034c;
   width: 120px;
 }
 
@@ -41,16 +41,16 @@ nav button:active {
 /* --- Cards --- */
 
 .card {
-  background: linear-gradient(to right, #650065, #450045);
+  background: linear-gradient(to right, #001575, #00034c);
   width: 1012px;
   max-width: 95vw;
-  border: 4px solid #FF55FF;
+  border: 4px solid #00d5ff;
   border-radius: 15px;
   margin: 20px auto;
   padding: 16px;
   display: flex;
   align-items: stretch;
-  box-shadow: 0 0 15px #BB00BB;
+  box-shadow: 0 0 15px #0043b3;
   overflow: hidden;
   transition: transform 0.15s;
 }
@@ -72,7 +72,7 @@ nav button:active {
   width: 220px;
   height: 120px;
   border-radius: 12px;
-  box-shadow: 0 0 15px #7700BB;
+  box-shadow: 0 0 15px #0043b3;
   object-fit: cover;
   display: block;
 }
@@ -82,7 +82,7 @@ nav button:active {
   min-width: 0;
   margin-left: 16px;
   font-weight: 600;
-  text-shadow: 4px 4px 3px #450045;
+  text-shadow: 4px 4px 3px #00034c;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,13 +110,13 @@ nav button:active {
 }
 
 .lvl_id:hover {
-  color: #ffeeff;
-  text-shadow: 0 0 15px #dd99dd;
+  color: #e0f0ff;
+  text-shadow: 0 0 15px #0043b3;
 }
 
 .lvl_id:active {
   color: #ccffff;
-  text-shadow: 0 0 15px #99ffff;
+  text-shadow: 0 0 15px #00d5ff;
 }
 
 .status {
@@ -146,6 +146,28 @@ nav button:active {
   text-align: right;
 }
 
+.list_c_box {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  background: linear-gradient(
+    to right,
+    rgba(2, 0, 41, 0) 0%,
+    rgba(4, 0, 41, 0) 25%,
+    rgba(4, 0, 41, 1) 50%,
+    rgba(4, 0, 41, 0) 75%,
+    rgba(4, 0, 41, 0) 100%
+  );
+}
+
+.list_c_name {
+  font-size: 60px;
+  line-height: 1;
+}
+
 /* --- Search --- */
 
 #search_box_container {
@@ -164,13 +186,13 @@ nav button:active {
 #search_input {
   height: 48px;
   width: 290px;
-  background: #450045;
-  border: 6px solid #FF55FF;
+  background: #00034c;
+  border: 6px solid #00d5ff;
   border-radius: 15px;
-  box-shadow: 0 0 15px #BB00BB;
+  box-shadow: 0 0 15px #0043b3;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 26px;
-  color: #ffdefd;
+  color: #e0f0ff;
   padding: 0 15px;
   outline: none;
   transition:
@@ -179,12 +201,12 @@ nav button:active {
 }
 
 #search_input::placeholder {
-  color: #aa77aa;
+  color: #4477aa;
 }
 
 #search_input:focus {
-  border-color: #ff99ff;
-  box-shadow: 0 0 20px #dd44dd;
+  border-color: #66e0ff;
+  box-shadow: 0 0 20px #00a0cc;
 }
 
 /* --- Modal --- */
@@ -204,15 +226,15 @@ nav button:active {
 
 .modal_info {
   z-index: 11;
-  background: rgba(30, 0, 30, 0.92);
+  background: rgba(4, 0, 41, 0.92);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   width: 900px;
   max-width: 95vw;
-  border: 4px solid #FF55FF;
+  border: 4px solid #00d5ff;
   border-radius: 15px;
   padding: 22px;
-  box-shadow: 0 0 15px #BB00BB;
+  box-shadow: 0 0 15px #0043b3;
   margin: 40px auto;
   display: flex;
   flex-direction: column;
@@ -227,7 +249,7 @@ nav button:active {
 .modal_info2 {
   width: 100%;
   font-weight: 600;
-  text-shadow: 4px 4px 3px #450045;
+  text-shadow: 4px 4px 3px #00034c;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,7 +259,7 @@ nav button:active {
 
 .modal_lvl_name {
   color: #ccffff;
-  text-shadow: 0 0 15px #99ffff;
+  text-shadow: 0 0 15px #00d5ff;
   font-size: 64px;
   word-break: break-word;
 }
@@ -255,7 +277,7 @@ nav button:active {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  box-shadow: 0 0 15px #7700BB;
+  box-shadow: 0 0 15px #0043b3;
   object-fit: cover;
   display: block;
 }
@@ -291,36 +313,36 @@ nav button:active {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: rgba(100, 0, 100, 0.4);
-  border: 2px solid #BB44BB;
+  background: rgba(0, 21, 117, 0.4);
+  border: 2px solid #0043b3;
   border-radius: 10px;
   padding: 8px 16px;
   font-size: 26px;
   font-weight: 600;
-  text-shadow: 2px 2px 2px #300030;
+  text-shadow: 2px 2px 2px #0c0029;
 }
 
 .victor_video_btn {
   height: 36px;
   width: 36px;
   min-width: 36px;
-  background: #550055;
-  border: 3px solid #FF55FF;
+  background: #001575;
+  border: 3px solid #00d5ff;
   border-radius: 8px;
-  box-shadow: 0 0 8px #BB00BB;
+  box-shadow: 0 0 8px #0043b3;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
   font-size: 16px;
-  color: #ffccff;
+  color: #c0e8ff;
   transition: background-color 0.2s, border-color 0.2s;
 }
 
 .victor_video_btn:hover {
-  background-color: #FF55FF;
-  color: #330033;
+  background-color: #00d5ff;
+  color: #00034c;
 }
 
 .victor_video_btn:active {
@@ -348,7 +370,7 @@ nav button:active {
 
 .victor_name {
   color: #ccffff;
-  text-shadow: 0 0 10px #99ffff;
+  text-shadow: 0 0 10px #00d5ff;
   flex: 1;
   text-align: left;
   overflow: hidden;
@@ -371,7 +393,7 @@ nav button:active {
 }
 
 .no_victors_text {
-  color: #aa77aa;
+  color: #4477aa;
   font-size: 26px;
   font-style: italic;
   padding: 10px;

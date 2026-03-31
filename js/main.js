@@ -6,11 +6,48 @@ const creators_text = document.getElementById("creators_text");
 const searchInput = document.getElementById('search_input');
 const victorsList = document.getElementById('victors_list');
 const modalMediaBox = document.getElementById('modal_media_box');
+const cbox = document.querySelector(".list_c_box");
 
 container2.style.display = 'none';
 main_button.disabled = true;
+cbox.style.display = 'none';
 
-// вкладки
+
+
+
+function createDivider(text) {
+  const div = document.createElement('div');
+  div.className = 'list_c_box list_divider';
+  div.innerHTML =
+    '<span class="list_c_name"><span class="text_pink_glow">' +
+    text +
+    '</span></span>';
+  return div;
+}
+
+const mainDivider = createDivider('Main');
+const mainCard1 = document.getElementById('main_card1');
+if (mainCard1) {
+  container.insertBefore(mainDivider, mainCard1);
+}
+
+const legacyDivider = createDivider('Legacy');
+const mainCard11 = document.getElementById('main_card16');
+if (mainCard11) {
+  container.insertBefore(legacyDivider, mainCard11);
+}
+
+function showDividers() {
+  mainDivider.style.display = '';
+  legacyDivider.style.display = '';
+}
+
+function hideDividers() {
+  mainDivider.style.display = 'none';
+  legacyDivider.style.display = 'none';
+}
+
+
 
 main_button.addEventListener('click', function () {
   container2.style.display = 'none';
@@ -39,6 +76,7 @@ function resetSearch() {
   container2.querySelectorAll('.card').forEach(card => {
     if (card.id !== 'future_card0') card.style.display = 'flex';
   });
+  showDividers();
 }
 
 searchInput.addEventListener('input', function () {
@@ -46,6 +84,13 @@ searchInput.addEventListener('input', function () {
   const isMainVisible = container.style.display !== 'none';
 
   if (isMainVisible) {
+
+    if (query === '') {
+      showDividers();
+    } else {
+      hideDividers();
+    }
+
     container.querySelectorAll('.card').forEach(card => {
       if (card.id === 'main_card0') return;
       const idx = parseInt(card.id.slice(9)) - 1;
@@ -53,10 +98,13 @@ searchInput.addEventListener('input', function () {
       const name = level.name.toLowerCase();
       const creators = level.creators.join(' ').toLowerCase();
       const id = level.id;
-      const match = name.includes(query) || creators.includes(query) || id.includes(query);
+      const match =
+        name.includes(query) || creators.includes(query) || id.includes(query);
       card.style.display = match ? 'flex' : 'none';
     });
   } else {
+    hideDividers();
+
     container2.querySelectorAll('.card').forEach(card => {
       if (card.id === 'future_card0') return;
       const idx = parseInt(card.id.slice(11)) - 1;
@@ -81,34 +129,31 @@ modal.addEventListener('click', function (e) {
   }
 });
 
-
-
 document.addEventListener('click', function (e) {
   const button = e.target.closest('.button1');
   if (!button) return;
   if (button.classList.contains('close_modal_btn')) return;
 
   const card = button.closest('.card');
-  if (!card || !card.id.startsWith("main_card") || card.id === 'main_card0') return;
+  if (!card || !card.id.startsWith('main_card') || card.id === 'main_card0')
+    return;
 
   const id = parseInt(card.id.slice(9)) - 1;
   const level = main_list[id];
 
-  document.getElementById("verifier_text").textContent = level.verifier;
-  document.getElementById("level_text").textContent = level.name;
+  document.getElementById('verifier_text').textContent = level.verifier;
+  document.getElementById('level_text').textContent = level.name;
 
-  // превью
-  const img = document.getElementById("modal_lvl_image");
-  img.src = "img/" + level.image;
-  img.onerror = function () { this.src = "img/no_image.png"; };
+  const img = document.getElementById('modal_lvl_image');
+  img.src = 'img/' + level.image;
+  img.onerror = function () {
+    this.src = 'img/no_image.png';
+  };
 
-  // создатели
-  const creators = level.creators.length > 0
-    ? level.creators.join(", ")
-    : "None";
+  const creators =
+    level.creators.length > 0 ? level.creators.join(', ') : 'None';
   creators_text.textContent = creators;
 
-  // викторы
   buildVictorsList(level);
 
   modal.style.display = 'block';
@@ -118,13 +163,13 @@ document.addEventListener('click', function (e) {
 function buildVictorsList(level) {
   victorsList.innerHTML = '';
 
-  // верифер
-  if (level.verifier && level.verifier !== "player") {
-    const row = createVictorRow(level.verifier, 100, level.verifyVideo || "", true);
+  if (level.verifier && level.verifier !== 'player') {
+    const row = createVictorRow(
+      level.verifier, 100, level.verifyVideo || '', true
+    );
     victorsList.appendChild(row);
   }
 
-  // другие
   if (level.victors.length > 0) {
     for (let i = 0; i < level.victors.length; i++) {
       const v = level.victors[i];
@@ -133,8 +178,10 @@ function buildVictorsList(level) {
     }
   }
 
-  // Пусто
-  if ((!level.verifier || level.verifier === "player") && level.victors.length === 0) {
+  if (
+    (!level.verifier || level.verifier === 'player') &&
+    level.victors.length === 0
+  ) {
     const none = document.createElement('div');
     none.className = 'no_victors_text';
     none.textContent = 'No victors yet';
@@ -146,7 +193,6 @@ function createVictorRow(name, progress, videoUrl, isVerifier) {
   const row = document.createElement('div');
   row.className = 'victor_row';
 
-  // кнопка записи
   const btn = document.createElement('button');
   btn.className = 'victor_video_btn';
 
@@ -172,13 +218,11 @@ function createVictorRow(name, progress, videoUrl, isVerifier) {
 
   row.appendChild(btn);
 
-  // ник
   const nameSpan = document.createElement('span');
   nameSpan.className = 'victor_name';
   nameSpan.textContent = name + (isVerifier ? ' (Verifier)' : '');
   row.appendChild(nameSpan);
 
-  // прогресс
   const progressSpan = document.createElement('span');
   progressSpan.className = 'victor_progress';
   if (progress >= 100) {
@@ -202,11 +246,11 @@ document.addEventListener('click', function (e) {
   const id = lvlId.textContent.slice(4);
   navigator.clipboard.writeText(id).then(() => {
     const originalText = lvlId.textContent;
-    lvlId.textContent = "Copied!";
-    lvlId.style.color = "#99ffcc";
+    lvlId.textContent = 'Copied!';
+    lvlId.style.color = '#99ffcc';
     setTimeout(() => {
       lvlId.textContent = originalText;
-      lvlId.style.color = "";
+      lvlId.style.color = '';
     }, 1000);
   });
 });
