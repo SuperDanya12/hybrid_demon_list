@@ -117,6 +117,8 @@ const future_list = [
 
   {name: "High Tide", author: "SnowballZn", image: "high_tide.png", status: "Building"},
 
+  {name: "Ballistic Blackfully", author: "sixiver227", image: "ballistic_blackfully.png", status: "Building"},
+
   {name: "Azurema", author: "SnowballZn", image: "azurema.png", status: "Building"}
 ];
 
