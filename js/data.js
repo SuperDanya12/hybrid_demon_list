@@ -56,7 +56,7 @@ const main_list = [
   ], verifyVideo: ""},
 
   {name: "Sine Wave", creators: ["Burda5800gd"], id: "405", image: "sine_wave.png", verifier: "Burda5800gd", victors: [
-
+    {name: "vlados79", progress: 100, video: "https://t.me/hybrid_gdps_archive/18"}
   ], verifyVideo: ""},
 
   {name: "Unbound", creators: ["TW1ST3D"], id: "367", image: "unbound.png", verifier: "player", victors: [
