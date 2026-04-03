@@ -2,6 +2,10 @@ const main_list = [
   {name: "Also Anathema", creators: ["Burda5800gd","Kosmos","PERFARATARRRRRR"], id: "665", image: "also_anathema.png", verifier: "Burda5800gd", victors: [
 
   ], verifyVideo: "https://youtu.be/tYlGDH_Bxcg?si=-2UHvzKXQ8WqB6uV"},
+  
+  {name: "Chaos Circles", creators: ["MiRPacK19"], id: "620", image: "chaos_circles.png", verifier: "MiRPacK19", victors: [
+
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/9"},
 
   {name: "ILOVEWAVE II", creators: ["Burda5800gd"], id: "786", image: "ilovewave_ii.png", verifier: "Burda5800gd", victors: [
 
@@ -32,11 +36,11 @@ const main_list = [
   ], verifyVideo: ""},
 
   {name: "DIACET", creators: ["ZippRolex"], id: "566", image: "diacet.png", verifier: "player", victors: [
-    
+
   ], verifyVideo: ""},
 
   {name: "CDVG", creators: ["pushkin228"], id: "241", image: "cdvg.png", verifier: "sixiver227", victors: [
-  
+
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/17"},
 
   {name: "Dual Switch", creators: ["Kosmos"], id: "639", image: "dual_switch.png", verifier: "Kosmos", victors: [
@@ -101,9 +105,7 @@ const main_list = [
 ];
 
 const challenge_list = [
-  {name: "Chaos Circles", creators: ["MiRPacK19"], id: "620", image: "chaos_circles.png", verifier: "MiRPacK19", victors: [
 
-  ], verifyVideo: "https://t.me/hybrid_gdps_archive/9"}
 ];
 
 const future_list = [
