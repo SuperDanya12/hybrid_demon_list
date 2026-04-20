@@ -2,6 +2,10 @@ const main_list = [
   {name: "Also Anathema", creators: ["Burda5800gd","Kosmos","PERFARATARRRRRR"], id: "665", image: "also_anathema.png", verifier: "Burda5800gd", victors: [
 
   ], verifyVideo: "https://youtu.be/tYlGDH_Bxcg?si=-2UHvzKXQ8WqB6uV"},
+
+  {name: "Mint Skies", creators: ["MiRPacK19"], id: "844", image: "mint_skies.png", verifier: "MiRPacK19", victors: [
+
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/21"},
   
   {name: "Chaos Circles", creators: ["MiRPacK19"], id: "620", image: "chaos_circles.png", verifier: "MiRPacK19", victors: [
 
