@@ -19,6 +19,10 @@ const main_list = [
 
   ], verifyVideo: ""},
 
+  {name: "Furry Circles", creators: ["MiRPacK19"], id: "849", image: "furry_circles.png", verifier: "MiRPacK19", victors: [
+
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/22"},
+
   {name: "EQU1NOX", creators: ["TW1ST3D"], id: "300", image: "equ1nox.png", verifier: "player", victors: [
 
   ], verifyVideo: ""},
