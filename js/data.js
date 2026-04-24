@@ -19,7 +19,7 @@ const main_list = [
 
   ], verifyVideo: ""},
 
-  {name: "Furry Circles", creators: ["MiRPacK19"], id: "849", image: "furry_circles.png", verifier: "MiRPacK19", victors: [
+  {name: "Furry Circles", creators: ["SuperDanya12"], id: "849", image: "furry_circles.png", verifier: "MiRPacK19", victors: [
 
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/22"},
 
