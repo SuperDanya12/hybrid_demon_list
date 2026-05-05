@@ -117,7 +117,9 @@ const main_list = [
 ];
 
 const challenge_list = [
+  {name: "Claustrophobia I", creators: ["ManiaGMD"], id: "855", image: "claustrophobia_i.png", verifier: "ManiaGMD", victors: [
 
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/23"}
 ];
 
 const future_list = [
