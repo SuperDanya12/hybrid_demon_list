@@ -123,6 +123,9 @@ const challenge_list = [
   {name: "Claustrophobia I", creators: ["ManiaGMD"], id: "855", image: "claustrophobia_i.png", verifier: "ManiaGMD", victors: [
 
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/23"},
+  {name: "Stereo Depression", creators: ["Alsoraz"], id: "399", image: "stereo_depression.png", verifier: "SuperDanya12", victors: [
+
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/26"},
   {name: "Claustrophobia II", creators: ["ManiaGMD"], id: "856", image: "claustrophobia_ii.png", verifier: "ManiaGMD", victors: [
 
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/24"}
