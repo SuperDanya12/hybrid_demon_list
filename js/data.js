@@ -29,7 +29,7 @@ const main_list = [
 
   {name: "devastate", creators: ["trixyy"], id: "854", image: "devastate.png", verifier: "trixyy", victors: [
 
-  ], verifyVideo: ""},
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/27"},
 
   {name: "ILOVEWAVE", creators: ["Burda5800gd"], id: "408", image: "ilovewave.png", verifier: "Burda5800gd", victors: [
     {name: "MiRPacK19", progress: 100, video: "https://t.me/hybrid_gdps_archive/4"}
