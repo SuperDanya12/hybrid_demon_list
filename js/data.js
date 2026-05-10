@@ -147,7 +147,7 @@ const challenge_list = [
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/24"},
   {name: "polargeist unnerfed", creators: ["sixiver227"], id: "862", image: "polargeist_unnerfed.png", verifier: "sixiver227", victors: [
 
-  ], verifyVideo: "https://t.me/hybrid_gdps_archive/29"}
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/31"}
 ];
 
 const future_list = [
