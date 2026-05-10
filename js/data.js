@@ -121,6 +121,9 @@ const main_list = [
 ];
 
 const challenge_list = [
+  {name: "ching level", creators: ["MiRPacK19"], id: "861", image: "ching_level.png", verifier: "MiRPacK19", victors: [
+
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/32"},
   {name: "Brainrot buff 2", creators: ["ManiaGMD"], id: "860", image: "brainrot_buff_2", verifier: "ManiaGMD", victors: [
 
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/30"},
@@ -141,7 +144,10 @@ const challenge_list = [
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/28"},
   {name: "Claustrophobia II", creators: ["ManiaGMD"], id: "856", image: "claustrophobia_ii.png", verifier: "ManiaGMD", victors: [
 
-  ], verifyVideo: "https://t.me/hybrid_gdps_archive/24"}
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/24"},
+  {name: "polargeist unnerfed", creators: ["sixiver227"], id: "862", image: "polargeist_unnerfed.png", verifier: "sixiver227", victors: [
+
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/29"}
 ];
 
 const future_list = [
