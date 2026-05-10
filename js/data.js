@@ -121,6 +121,9 @@ const main_list = [
 ];
 
 const challenge_list = [
+  {name: "Brainrot buff 2", creators: ["ManiaGMD"], id: "860", image: "brainrot_buff_2", verifier: "ManiaGMD", victors: [
+
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/30"},
   {name: "Claustrophobia III", creators: ["ManiaGMD"], id: "857", image: "claustrophobia_iii.png", verifier: "ManiaGMD", victors: [
 
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/25"},
