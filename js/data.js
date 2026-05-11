@@ -140,7 +140,7 @@ const challenge_list = [
 
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/29"},
   {name: "Brainrot", creators: ["ManiaGMD"], id: "858", image: "brainrot.png", verifier: "ManiaGMD", victors: [
-
+    {name: "vlados79", progress: 100, video: "https://t.me/hybrid_gdps_archive/33"}
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/28"},
   {name: "Claustrophobia II", creators: ["ManiaGMD"], id: "856", image: "claustrophobia_ii.png", verifier: "ManiaGMD", victors: [
 
