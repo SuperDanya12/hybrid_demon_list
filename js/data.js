@@ -130,9 +130,15 @@ const challenge_list = [
   {name: "Claustrophobia III", creators: ["ManiaGMD"], id: "857", image: "claustrophobia_iii.png", verifier: "ManiaGMD", victors: [
 
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/25"},
+  {name: "You", creators: ["ManiaGMD"], id: "866", image: "you.png", verifier: "ManiaGMD", victors: [
+
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/36"},
   {name: "Claustrophobia I", creators: ["ManiaGMD"], id: "855", image: "claustrophobia_i.png", verifier: "ManiaGMD", victors: [
 
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/23"},
+  {name: "Final Hybridation", creators: ["MiRPacK19"], id: "686", image: "final_hybridation.png", verifier: "vlados79", victors: [
+
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/35"},
   {name: "Stereo Depression", creators: ["Alsoraz"], id: "399", image: "stereo_depression.png", verifier: "SuperDanya12", victors: [
 
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/26"},
