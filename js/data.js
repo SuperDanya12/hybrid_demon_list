@@ -127,12 +127,12 @@ const challenge_list = [
   {name: "Brainrot buff 2", creators: ["ManiaGMD"], id: "860", image: "brainrot_buff_2", verifier: "ManiaGMD", victors: [
 
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/30"},
-  {name: "Claustrophobia III", creators: ["ManiaGMD"], id: "857", image: "claustrophobia_iii.png", verifier: "ManiaGMD", victors: [
-
-  ], verifyVideo: "https://t.me/hybrid_gdps_archive/25"},
   {name: "You", creators: ["ManiaGMD"], id: "866", image: "you.png", verifier: "ManiaGMD", victors: [
 
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/36"},
+  {name: "Claustrophobia III", creators: ["ManiaGMD"], id: "857", image: "claustrophobia_iii.png", verifier: "ManiaGMD", victors: [
+
+  ], verifyVideo: "https://t.me/hybrid_gdps_archive/25"},
   {name: "Claustrophobia I", creators: ["ManiaGMD"], id: "855", image: "claustrophobia_i.png", verifier: "ManiaGMD", victors: [
 
   ], verifyVideo: "https://t.me/hybrid_gdps_archive/23"},
